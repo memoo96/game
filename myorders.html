@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="Keywords" content="Bader's World - more description" />
+  <meta name="description" content="Bader's World - more description" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bader's World</title>
+  <link rel="icon" type="image/png" href="images/icon.png" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/slick.min.css" />
+  <link rel="stylesheet" href="css/slick-theme.min.css" />
+  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Start navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent"
+      aria-controls="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="mx-2 close"><img src="images/cancel.svg" alt=""></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="col-lg-3">
+      <div class="links">
+        <ul>
+          <li class="wow slideInRight" data-wow-duration="1s">
+            <a href="login.html" data-toggle="tooltip" title="حسابي" data-placement="bottom">
+              <img class="userNav" src="images/user.png" alt="">
+            </a>
+          </li>
+          <li class="wow slideInRight" data-wow-duration="2s">
+            <a href="shoppingcart.html" data-toggle="tooltip" title="عربة التسوق" data-placement="bottom">
+              <img class="cartNav" src="images/cart.png" alt="">
+              <div class="CartNumber">
+                <h5>5</h5>
+              </div>
+            </a>
+          </li>
+          <li class="wow slideInRight" data-wow-duration="3s">
+            <a href="#" data-toggle="tooltip" title="EN" data-placement="bottom">
+              <img class="langNav" src="images/lang.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link active wow bounceInRight" data-wow-duration="1s">الرئيسية</a>
+          </li>
+          <li class="nav-item"><a href="about_us.html" class="nav-link wow bounceInRight" data-wow-duration="2s">عن اللعبة</a></li>
+          <li class="nav-item"><a href="#HowToPlay" class="nav-link wow bounceInRight" data-wow-duration="3s">كيفية اللعب</a>
+          </li>
+          <li class="nav-item"><a href="category.html" class="nav-link wow bounceInRight" data-wow-duration="4s">شراء الآن</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="orderBtn">
+        <a href="category.html" class="btn btnAnimate_2">اطلب الأن</a>
+      </div>
+    </div>
+
+
+
+  </nav>
+  <!-- End navbar -->
+
+  <div class="row m-0">
+    <div class="col-12 p-0">
+      <div class="headerImg shimmer">
+        <img src="images/headtitleBG.png" alt="" />
+      </div>
+    </div>
+    <div class="col-12 p-0">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+        <li class="breadcrumb-item active">طلباتي</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="MyOrders">
+    <div class="container">
+      <div class="Section_title">
+        <img class="for_title_top" src="images/for_title_top.svg" alt="">
+        <ul>
+          <li><img src="images/for_title.svg" alt=""></li>
+          <li>
+            <h2>طلباتي</h2>
+          </li>
+          <li><img src="images/for_title.svg" alt=""></li>
+        </ul>
+        <img class="for_title_bottom" src="images/for_title_bottom.svg" alt="">
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <div class="myaccount_content">
+                <div class="row">
+                  <div class="col-sm-6 col-12">
+                    <div class="accountTitle">
+                      <h4>مرحبا محمد</h4>
+                      <span><img src="images/points.png" alt="">50 نقطة</span>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-12">
+                    <div class="logoutButton">
+                      <a href="#" class="btn btnAnimate_2">تسجيل الخروج</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="Links">
+                  <ul>
+                    <li><a href="edit_profile.html"><i class="fa fa-user-o"></i> تعديل الملف الشخصي</a></li>
+                    <li><a href="myaddresses.html"><i class="fa fa-map-marker"></i> عناويني</a></li>
+                    <li><a class="active" href="#"><i class="fa fa-file-text-o"></i> طلباتي</a></li>
+                    <li><a href="change_password.html"><i class="fa fa-lock"></i> تغيير كلمة المرور</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+
+                  <div class="col-12">
+                    <div class="table-responsive">
+                      <table class="table table-striped table-responsive-stack table-bordered">
+                        <thead>
+                          <tr>
+                            <th># طلب</th>
+                            <th>تاريخ</th>
+                            <th>إجمالي الطلب</th>
+                            <th>حالة</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="spacer"></tr>
+                          <tr>
+                            <td>ba123</td>
+                            <td><span>27-11-2026</span></td>
+                            <td><span>350 د.ك</span></td>
+                            <td><span style="color: #6FA58E;">مكتمل</span></td>
+                            <td>
+                              <a href="order_details.html" class="ViewBtn btn btnAnimate">عرض</a>
+                              <a href="shoppingcart.html" class="ReorderBtn btn btnAnimate">إعادة الطلب</a>
+                            </td>
+                          </tr>
+                          <tr class="spacer"></tr>
+                          <tr>
+                            <td>ba123</td>
+                            <td><span>27-11-2026</span></td>
+                            <td><span>350 د.ك</span></td>
+                            <td><span style="color: #EA9B1E;">قيد الانتظار</span></td>
+                            <td>
+                              <a href="order_details.html" class="ViewBtn btn btnAnimate">عرض</a>
+                              <a href="shoppingcart.html" class="ReorderBtn btn btnAnimate">إعادة الطلب</a>
+                            </td>
+                          </tr>
+                          <tr class="spacer"></tr>
+                          <tr>
+                            <td>ba123</td>
+                            <td><span>27-11-2026</span></td>
+                            <td><span>350 د.ك</span></td>
+                            <td><span style="color: #454545;">جار المعاينة</span></td>
+                            <td>
+                              <a href="order_details.html" class="ViewBtn btn btnAnimate">عرض</a>
+                              <a href="shoppingcart.html" class="ReorderBtn btn btnAnimate">إعادة الطلب</a>
+                            </td>
+                          </tr>
+                          <tr class="spacer"></tr>
+                          <tr>
+                            <td>ba123</td>
+                            <td><span>27-11-2026</span></td>
+                            <td><span>350 د.ك</span></td>
+                            <td><span style="color: #ED2F2F;">تم الإلغاء</span></td>
+                            <td>
+                              <a href="order_details.html" class="ViewBtn btn btnAnimate">عرض</a>
+                              <a href="shoppingcart.html" class="ReorderBtn btn btnAnimate">إعادة الطلب</a>
+                            </td>
+                          </tr>
+                          <tr class="spacer"></tr>
+                          <tr>
+                            <td>ba123</td>
+                            <td><span>27-11-2026</span></td>
+                            <td><span>350 د.ك</span></td>
+                            <td><span style="color: #6FA58E;">مكتمل</span></td>
+                            <td>
+                              <a href="order_details.html" class="ViewBtn btn btnAnimate">عرض</a>
+                              <a href="shoppingcart.html" class="ReorderBtn btn btnAnimate">إعادة الطلب</a>
+                            </td>
+                          </tr>
+                          <tr class="spacer"></tr>
+                          <tr>
+                            <td>ba123</td>
+                            <td><span>27-11-2026</span></td>
+                            <td><span>350 د.ك</span></td>
+                            <td><span style="color: #EA9B1E;">قيد الانتظار</span></td>
+                            <td>
+                              <a href="order_details.html" class="ViewBtn btn btnAnimate">عرض</a>
+                              <a href="shoppingcart.html" class="ReorderBtn btn btnAnimate">إعادة الطلب</a>
+                            </td>
+                          </tr>
+                          <tr class="spacer"></tr>
+                          <tr>
+                            <td>ba123</td>
+                            <td><span>27-11-2026</span></td>
+                            <td><span>350 د.ك</span></td>
+                            <td><span style="color: #454545;">جار المعاينة</span></td>
+                            <td>
+                              <a href="order_details.html" class="ViewBtn btn btnAnimate">عرض</a>
+                              <a href="shoppingcart.html" class="ReorderBtn btn btnAnimate">إعادة الطلب</a>
+                            </td>
+                          </tr>
+                          <tr class="spacer"></tr>
+                          <tr>
+                            <td>ba123</td>
+                            <td><span>27-11-2026</span></td>
+                            <td><span>350 د.ك</span></td>
+                            <td><span style="color: #ED2F2F;">تم الإلغاء</span></td>
+                            <td>
+                              <a href="order_details.html" class="ViewBtn btn btnAnimate">عرض</a>
+                              <a href="shoppingcart.html" class="ReorderBtn btn btnAnimate">إعادة الطلب</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Start Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-unstyled footer_list">
+            <li class="widget-container widget_nav_menu">
+              <h1 class="title-widget">معلومات عنا</h1>
+              <ul class="linksList">
+                <li><a href="contact_us.html">تواصل معنا</a></li>
+                <div class="Links">
+                  <ul>
+                    <li>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="location text-truncate">
+                        hawaly, salmaya, block 13...
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      <div class="location text-truncate">
+                        info@Badrworld.com
+                      </div>
+                    </li>
+                    <li>
+                      <a href="tel:000 000 0000">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div class="location text-truncate">123456789</div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-unstyled footer_list">
+            <li class="widget-container widget_nav_menu">
+              <h1 class="title-widget">اختر لعبتك</h1>
+              <ul class="linksList">
+                <li><a href="category.html">الإصدار الاقتصادي</a></li>
+                <li><a href="category.html">الباقة الملكية</a></li>
+                <li><a href="category.html">باقة الشلة</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-unstyled footer_list">
+            <li class="widget-container widget_nav_menu">
+              <h1 class="title-widget">حسابي</h1>
+              <ul class="linksList">
+                <li><a href="edit_profile.html">حسابي</a></li>
+                <li><a href="myorders.html">طلباتي</a></li>
+                <li><a href="myaddresses.html">عناويني</a></li>
+                <li><a href="shoppingcart.html">عربة التسوق</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-unstyled">
+            <li class="widget-container widget_nav_menu">
+              <h1 class="title-widget">ابق على تواصل</h1>
+              <ul class="SocialList">
+                <li>
+                  <div class="newsteller">
+                    <span>اشترك ليصلك كل جديد لدينا</span>
+                    <div class="email-box">
+                      <input type="text" class="form-control subscribeInp"
+                        placeholder="أدخل عنوان بريدك الالكتروني هنا...">
+                      <div class="subscribeButton">
+                        <button class="btn btnAnimate_2">اشترك</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 p-0">
+              <div class="row">
+                <div class="col-6">
+                  <div class="socialFooter">
+                    <ul>
+                      <li><a href="#"><img src="images/snapchat.svg" alt=""></a></li>
+                      <li><a href="#"><img src="images/tiktok.svg" alt=""></a></li>
+                      <li><a href="#"><img src="images/instagram.svg" alt=""></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="payFooter">
+                    <ul>
+                      <li><img src="images/k-net.png" alt=""></li>
+                      <li><img src="images/master.png" alt=""></li>
+                      <li><img src="images/visa.png" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 p-0">
+
+              <div class="language">
+                <p>© 2026 لعبة بدر ورلد – جميع الحقوق محفوظة</p>
+              </div>
+              <div class="copyright">
+                <p>طورت بواسطة <a href="https://hardtask.com/" target="_blank"><img src="images/HardTask_logo.svg"
+                      alt=""></a></p>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Start Scroll To Top  -->
+  <div class="scroll_top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+  </div>
+  <!-- End Scroll To Top -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.nice-select.js"></script>
+  <script src="js/jquery.simplePagination.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

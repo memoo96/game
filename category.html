@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="Keywords" content="Bader's World - more description" />
+  <meta name="description" content="Bader's World - more description" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bader's World</title>
+  <link rel="icon" type="image/png" href="images/icon.png" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/slick.min.css" />
+  <link rel="stylesheet" href="css/slick-theme.min.css" />
+  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Start navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent"
+      aria-controls="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="mx-2 close"><img src="images/cancel.svg" alt=""></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="col-lg-3">
+      <div class="links">
+        <ul>
+          <li class="wow slideInRight" data-wow-duration="1s">
+            <a href="login.html" data-toggle="tooltip" title="حسابي" data-placement="bottom">
+              <img class="userNav" src="images/user.png" alt="">
+            </a>
+          </li>
+          <li class="wow slideInRight" data-wow-duration="2s">
+            <a href="shoppingcart.html" data-toggle="tooltip" title="عربة التسوق" data-placement="bottom">
+              <img class="cartNav" src="images/cart.png" alt="">
+              <div class="CartNumber">
+                <h5>5</h5>
+              </div>
+            </a>
+          </li>
+          <li class="wow slideInRight" data-wow-duration="3s">
+            <a href="#" data-toggle="tooltip" title="EN" data-placement="bottom">
+              <img class="langNav" src="images/lang.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div id="navbarContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link active wow bounceInRight" data-wow-duration="1s">الرئيسية</a>
+          </li>
+          <li class="nav-item"><a href="about_us.html" class="nav-link wow bounceInRight" data-wow-duration="2s">عن اللعبة</a></li>
+          <li class="nav-item"><a href="#HowToPlay" class="nav-link wow bounceInRight" data-wow-duration="3s">كيفية اللعب</a>
+          </li>
+          <li class="nav-item"><a href="category.html" class="nav-link wow bounceInRight" data-wow-duration="4s">شراء الآن</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="orderBtn">
+        <a href="category.html" class="btn btnAnimate_2">اطلب الأن</a>
+      </div>
+    </div>
+
+
+
+  </nav>
+  <!-- End navbar -->
+
+  <div class="row m-0">
+    <div class="col-12 p-0">
+      <div class="headerImg shimmer">
+        <img src="images/headtitleBG.png" alt="" />
+      </div>
+    </div>
+    <div class="col-12 p-0">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+        <li class="breadcrumb-item active">منتجاتنا</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="Category_page">
+    <div class="container">
+      <div class="Section_title">
+        <img class="for_title_top" src="images/for_title_top.svg" alt="">
+        <ul>
+          <li><img src="images/for_title.svg" alt=""></li>
+          <li>
+            <h2>منتجاتنا</h2>
+          </li>
+          <li><img src="images/for_title.svg" alt=""></li>
+        </ul>
+        <img class="for_title_bottom" src="images/for_title_bottom.svg" alt="">
+      </div>
+      <div class="row">
+        <div class="Filter_Btn col-12 mb-4">
+          <a id="FilterBtn" href="javascript:void(0);"><i class="fa fa-filter" aria-hidden="true"></i> فلتر</a>
+        </div>
+        <div class="col-lg-3 Filter_Mobile">
+          <div class="SortBy">
+            <div class="title">
+              <div class="row">
+                <div class="col-7">
+                  <div class="MainTitle">
+                    <span>تصفية حسب السعر</span>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="removeFilter">
+                    <a href="#">إزالة الفلتر</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input id="price1" name="price" type="radio">
+            <label for="price1" class="radio-label">أقل من 10,000 د.ك</label>
+            <input id="price2" name="price" type="radio">
+            <label for="price2" class="radio-label">10.000 - 20.000 د.ك</label>
+            <input id="price3" name="price" type="radio">
+            <label for="price3" class="radio-label">20,000 - 30,000 د.ك</label>
+            <input id="price4" name="price" type="radio">
+            <label for="price4" class="radio-label">30,000 - 40,000 د.ك</label>
+            <input id="price5" name="price" type="radio">
+            <label for="price5" class="radio-label">أكثر من 40,000 د.ك</label>
+          </div>
+          <div class="SortBy">
+            <div class="title">
+              <div class="row">
+                <div class="col-12">
+                  <div class="MainTitle">
+                    <span>نوع المنتج</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <input id="cat1" name="category" type="radio" checked>
+            <label for="cat1" class="radio-label">الكل</label>
+            <input id="cat2" name="category" type="radio">
+            <label for="cat2" class="radio-label">الإصدار الاقتصادي</label>
+            <input id="cat3" name="category" type="radio">
+            <label for="cat3" class="radio-label">الباقة الملكية</label>
+            <input id="cat4" name="category" type="radio">
+            <label for="cat4" class="radio-label">باقة الشلة</label>
+            <input id="cat5" name="category" type="radio">
+            <label for="cat5" class="radio-label">باقة الديوانية</label>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col-12">
+              <div class="filterSort">
+                <ul>
+                  <li><span>فرز حسب</span></li>
+                  <li>
+                    <select class="Select">
+                      <option value="Recommended">موصى به</option>
+                      <option value="Name">الاسم: من الألف إلى الياء</option>
+                      <option value="Name2">الاسم: من الياء إلى الألف</option>
+                      <option value="Price">السعر: من الأدنى إلى الأعلى</option>
+                    </select>
+                  </li>
+                  <li><span>عرض</span></li>
+                  <li>
+                    <select class="Select">
+                      <option value="9">9</option>
+                      <option value="12">12</option>
+                    </select>
+                  </li>
+                  <li>
+                    <p class="per_page">لكل صفحة</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_1.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>الإصدار الاقتصادي</h5>
+                </div>
+                <div class="price">
+                  <span>150 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_2.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>الباقة الملكية</h5>
+                </div>
+                <div class="price">
+                  <span>280 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_3.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>باقة الشلة</h5>
+                </div>
+                <div class="price">
+                  <span>200 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_4.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>باقة الديوانية</h5>
+                </div>
+                <div class="price">
+                  <span>400 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_1.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>الإصدار الاقتصادي</h5>
+                </div>
+                <div class="price">
+                  <span>150 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_2.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>الباقة الملكية</h5>
+                </div>
+                <div class="price">
+                  <span>280 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_3.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>باقة الشلة</h5>
+                </div>
+                <div class="price">
+                  <span>200 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_4.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>باقة الديوانية</h5>
+                </div>
+                <div class="price">
+                  <span>400 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_1.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>الإصدار الاقتصادي</h5>
+                </div>
+                <div class="price">
+                  <span>150 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_2.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>الباقة الملكية</h5>
+                </div>
+                <div class="price">
+                  <span>280 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_3.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>باقة الشلة</h5>
+                </div>
+                <div class="price">
+                  <span>200 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product">
+                <div class="image">
+                  <img src="images/product_4.png" alt="">
+                  <div class="sale">
+                    <span>أكثر مبيعا</span>
+                  </div>
+                </div>
+                <div class="title">
+                  <h5>باقة الديوانية</h5>
+                </div>
+                <div class="price">
+                  <span>400 د.ك</span>
+                </div>
+                <div class="orderBtn">
+                  <a href="product_details.html" class="btn btnAnimate_2">اطلب الأن</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="pagination-container"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-unstyled footer_list">
+            <li class="widget-container widget_nav_menu">
+              <h1 class="title-widget">معلومات عنا</h1>
+              <ul class="linksList">
+                <li><a href="contact_us.html">تواصل معنا</a></li>
+                <div class="Links">
+                  <ul>
+                    <li>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div class="location text-truncate">
+                        hawaly, salmaya, block 13...
+                      </div>
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      <div class="location text-truncate">
+                        info@Badrworld.com
+                      </div>
+                    </li>
+                    <li>
+                      <a href="tel:000 000 0000">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div class="location text-truncate">123456789</div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-unstyled footer_list">
+            <li class="widget-container widget_nav_menu">
+              <h1 class="title-widget">اختر لعبتك</h1>
+              <ul class="linksList">
+                <li><a href="category.html">الإصدار الاقتصادي</a></li>
+                <li><a href="category.html">الباقة الملكية</a></li>
+                <li><a href="category.html">باقة الشلة</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-unstyled footer_list">
+            <li class="widget-container widget_nav_menu">
+              <h1 class="title-widget">حسابي</h1>
+              <ul class="linksList">
+                <li><a href="edit_profile.html">حسابي</a></li>
+                <li><a href="myorders.html">طلباتي</a></li>
+                <li><a href="myaddresses.html">عناويني</a></li>
+                <li><a href="shoppingcart.html">عربة التسوق</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12">
+          <ul class="list-unstyled">
+            <li class="widget-container widget_nav_menu">
+              <h1 class="title-widget">ابق على تواصل</h1>
+              <ul class="SocialList">
+                <li>
+                  <div class="newsteller">
+                    <span>اشترك ليصلك كل جديد لدينا</span>
+                    <div class="email-box">
+                      <input type="text" class="form-control subscribeInp"
+                        placeholder="أدخل عنوان بريدك الالكتروني هنا...">
+                      <div class="subscribeButton">
+                        <button class="btn btnAnimate_2">اشترك</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12 p-0">
+              <div class="row">
+                <div class="col-6">
+                  <div class="socialFooter">
+                    <ul>
+                      <li><a href="#"><img src="images/snapchat.svg" alt=""></a></li>
+                      <li><a href="#"><img src="images/tiktok.svg" alt=""></a></li>
+                      <li><a href="#"><img src="images/instagram.svg" alt=""></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="payFooter">
+                    <ul>
+                      <li><img src="images/k-net.png" alt=""></li>
+                      <li><img src="images/master.png" alt=""></li>
+                      <li><img src="images/visa.png" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 p-0">
+
+              <div class="language">
+                <p>© 2026 لعبة بدر ورلد – جميع الحقوق محفوظة</p>
+              </div>
+              <div class="copyright">
+                <p>طورت بواسطة <a href="https://hardtask.com/" target="_blank"><img src="images/HardTask_logo.svg"
+                      alt=""></a></p>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Start Scroll To Top  -->
+  <div class="scroll_top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+  </div>
+  <!-- End Scroll To Top -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.nice-select.js"></script>
+  <script src="js/jquery.simplePagination.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+
+    var items = $(".product");
+    var numItems = items.length;
+    var perPage = 9;
+
+    items.slice(perPage).hide();
+
+    if (numItems > perPage) {
+      $('#pagination-container').pagination({
+        items: numItems,
+        itemsOnPage: perPage,
+        prevText: "&laquo;",
+        nextText: "&raquo;",
+        onPageClick: function (pageNumber) {
+          var showFrom = perPage * (pageNumber - 1);
+          var showTo = showFrom + perPage;
+          items.hide().slice(showFrom, showTo).show();
+        }
+      });
+    }
+
+  </script>
+</body>
+
+</html>
